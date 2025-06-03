@@ -26,12 +26,10 @@ public class Post {
     @JoinColumn(name = "author_id")
     private User author;
 
-    // Getter method for author's email
     public String getAuthorEmail() {
         return author != null ? author.getEmail() : null;
     }
 
-    // Original getters and setters
     public Long getId() {
         return id;
     }
